@@ -55,42 +55,47 @@ npm run dev
 
 Database Design
 
-Table: chemical_products
+Table: chemical_products  
 Stores master data for chemical products.
 
-Column Name | Data Type | Description
-id | SERIAL | Primary key
-product_name | VARCHAR | Product name
-cas_number | VARCHAR | Unique CAS number
-unit_of_measurement | VARCHAR | KG / MT / Litre
-created_at | TIMESTAMP | Creation timestamp
-updated_at | TIMESTAMP | Update timestamp
+| Column Name           | Data Type  | Description            |
+|-----------------------|------------|------------------------|
+| id                    | SERIAL     | Primary key            |
+| product_name          | VARCHAR    | Product name           |
+| cas_number            | VARCHAR    | Unique CAS number      |
+| unit_of_measurement   | VARCHAR    | KG / MT / Litre        |
+| created_at            | TIMESTAMP  | Creation timestamp     |
+| updated_at            | TIMESTAMP  | Update timestamp       |
 
 --------------------------------------------------
 
-Table: inventory
+Table: inventory  
 Maintains current stock for each product.
 
-Column Name | Data Type | Description
-id | SERIAL | Primary key
-product_id | INTEGER | FK → chemical_products
-current_stock_quantity | DECIMAL | Current stock
-created_at | TIMESTAMP | Creation timestamp
-updated_at | TIMESTAMP | Update timestamp
+| Column Name               | Data Type | Description                          |
+|---------------------------|-----------|--------------------------------------|
+| id                        | SERIAL    | Primary key                          |
+| product_id                | INTEGER   | FK → chemical_products               |
+| current_stock_quantity    | DECIMAL   | Current stock                        |
+| created_at                | TIMESTAMP | Creation timestamp                   |
+| updated_at                | TIMESTAMP | Update timestamp                     |
+
 
 --------------------------------------------------
 
-Table: stock_movements
-Tracks stock movement history.
+Stock Movements Table  
+Tracks complete stock movement history.
 
-Column Name | Data Type | Description
-id | SERIAL | Primary key
-product_id | INTEGER | FK → chemical_products
-movement_type | VARCHAR | IN / OUT
-quantity | DECIMAL | Movement quantity
-previous_stock | DECIMAL | Stock before change
-new_stock | DECIMAL | Stock after change
-created_at | TIMESTAMP | Movement timestamp
+| Column         | Type      | Description              |
+|---------------|-----------|--------------------------|
+| id            | SERIAL    | Primary key              |
+| product_id    | INTEGER   | FK → chemical_products   |
+| movement_type | VARCHAR   | IN / OUT                 |
+| quantity      | DECIMAL   | Movement quantity        |
+| previous_stock| DECIMAL   | Stock before change      |
+| new_stock     | DECIMAL   | Stock after change       |
+| created_at    | TIMESTAMP | Movement timestamp       |
+
 
 --------------------------------------------------
 
