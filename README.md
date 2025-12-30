@@ -97,8 +97,23 @@ Tracks complete stock movement history.
 | created_at    | TIMESTAMP | Movement timestamp       |
 
 
---------------------------------------------------
+---------------------------------------------------------------
 
+Project Screenshots
+
+Home Page
+![Inventory List](screenshots/inventory_List.png)
+
+Product Management
+![Product Management](screenshots\Product_management.png)
+
+Stock Update
+![Stock Update](screenshots\Stock_update.png)
+
+Add New Product
+![Add Product](screenshots\Add_product.png)
+
+----------------------------------------------------------------------------
 Conclusion
 This system provides a scalable and maintainable solution for chemical inventory management.
 It ensures data integrity, proper stock tracking, and is suitable for real-world use.
