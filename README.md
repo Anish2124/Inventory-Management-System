@@ -101,17 +101,17 @@ Tracks complete stock movement history.
 
 Project Screenshots
 
-Home Page
-![Inventory List](screenshots/inventory_List.png)
+Inventory List
+![Inventory List](screenshots/Inventory_List.png)
 
 Product Management
-![Product Management](screenshots\Product_management.png)
+![Product Management](screenshots/Product_management.png)
 
 Stock Update
-![Stock Update](screenshots\Stock_update.png)
+![Stock Update](screenshots/Stock_update.png)
 
 Add New Product
-![Add Product](screenshots\Add_product.png)
+![Add Product](screenshots/Add_product.png)
 
 ----------------------------------------------------------------------------
 Conclusion
