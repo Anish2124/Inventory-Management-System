@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Tabs, Tab, Box } from '@mui/material';
 
@@ -13,7 +12,7 @@ function Navigation(): JSX.Element {
 
   return (
     <Box sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: 'background.paper' }}>
-      <Tabs value={getTabValue()} aria-label="navigation tabs" size="small">
+      <Tabs value={getTabValue()} aria-label="navigation tabs">
         <Tab label="Inventory List" component={Link} to="/" />
         <Tab label="Product Management" component={Link} to="/products" />
         <Tab label="Stock Update" component={Link} to="/stock-update" />

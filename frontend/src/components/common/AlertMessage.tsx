@@ -1,4 +1,3 @@
-import React from 'react';
 import { Alert, AlertProps } from '@mui/material';
 
 interface AlertMessageProps {
